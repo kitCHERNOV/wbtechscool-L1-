@@ -1,4 +1,4 @@
-package l2_2
+package l1_2
 
 import "sync"
 
