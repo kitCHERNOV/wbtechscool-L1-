@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"runtime"
+	"time"
 	"wbtech/l1_1"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
@@ -31,5 +32,5 @@ func main() {
 	l1_3.CreateWorkers(numWorkers)
 
 	// ===== l1.5 ===== //
-	l1_5.Manager()
+	l1_5.Manager(time.Second)
 }

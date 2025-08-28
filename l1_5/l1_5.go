@@ -34,10 +34,10 @@ func ReaderFromChannel(ch chan int) {
 	}
 }
 
-func Manager() {
+func Manager(time time.Duration) {
 
 	wg.Add(2)
-	go WriterToChannel(ch, time.Second)
+	go WriterToChannel(ch, time)
 	go ReaderFromChannel(ch)
 
 	wg.Wait()
