@@ -10,6 +10,7 @@ import (
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
 	"wbtech/l1_6"
+	"wbtech/l1_7"
 )
 
 func main() {
@@ -48,5 +49,7 @@ func main() {
 	case 6:
 		// ===== l1.6 ===== //
 		l1_6.MagerFunc()
+	case 7:
+		l1_7.MainFunc()
 	}
 }
