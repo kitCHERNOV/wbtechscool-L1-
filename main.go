@@ -7,6 +7,7 @@ import (
 	"time"
 	"wbtech/l1_1"
 	"wbtech/l1_10"
+	"wbtech/l1_11"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
@@ -60,5 +61,10 @@ func main() {
 		l1_9.MainFunc()
 	case 10:
 		l1_10.MainFunc()
+	case 11:
+		arr1 := []int{1, 2, 3}
+		arr2 := []int{2, 3, 4}
+		intersection := l1_11.SetIntersection(arr1, arr2)
+		fmt.Printf("Intersection of arr1: %v and arr2: %v is here: %v", arr1, arr2, intersection)
 	}
 }
