@@ -11,6 +11,7 @@ import (
 	"wbtech/l1_5"
 	"wbtech/l1_6"
 	"wbtech/l1_7"
+	"wbtech/l1_8"
 )
 
 func main() {
@@ -51,5 +52,8 @@ func main() {
 		l1_6.MagerFunc()
 	case 7:
 		l1_7.MainFunc()
+	case 8:
+		l1_8.MainFunc(4, 3)
 	}
+
 }
