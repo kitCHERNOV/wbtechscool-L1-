@@ -8,6 +8,7 @@ import (
 	"wbtech/l1_1"
 	"wbtech/l1_10"
 	"wbtech/l1_11"
+	"wbtech/l1_12"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
@@ -66,5 +67,9 @@ func main() {
 		arr2 := []int{2, 3, 4}
 		intersection := l1_11.SetIntersection(arr1, arr2)
 		fmt.Printf("Intersection of arr1: %v and arr2: %v is here: %v", arr1, arr2, intersection)
+	case 12:
+		arr := []string{"cat", "cat", "dog", "cat", "tree"}
+		set := l1_12.CreateSet[string](arr)
+		fmt.Println(set)
 	}
 }
