@@ -74,5 +74,7 @@ func main() {
 		fmt.Println(set)
 	case 13:
 		l1_13.ReplaceBothVariables()
+	case 14:
+
 	}
 }
