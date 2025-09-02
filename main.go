@@ -10,6 +10,7 @@ import (
 	"wbtech/l1_11"
 	"wbtech/l1_12"
 	"wbtech/l1_13"
+	"wbtech/l1_16"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
@@ -74,7 +75,9 @@ func main() {
 		fmt.Println(set)
 	case 13:
 		l1_13.ReplaceBothVariables()
-	case 14:
-
+	case 16:
+		arr := []int{1, 2, 3, 12, 4, 6, 8, 10, 12, 14, 16, 18}
+		l1_16.QuickSort(arr)
+		fmt.Println(arr)
 	}
 }

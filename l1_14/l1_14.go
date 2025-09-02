@@ -1,5 +1,7 @@
 package l1_14
 
+import "strings"
+
 // Орпеделение в рантайме типа переданной переменной
 func TypeDeterminer(yourValue any) any {
 	switch yourValue.(type) {
@@ -18,4 +20,12 @@ func TypeDeterminer(yourValue any) any {
 	default:
 		return yourValue
 	}
+}
+
+var justString string
+
+func Other() {
+	str := "hello world"
+	justString = str[:5]
+	justString = strings.Clone(str[:5])
 }
