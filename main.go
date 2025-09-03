@@ -12,6 +12,7 @@ import (
 	"wbtech/l1_13"
 	"wbtech/l1_16"
 	"wbtech/l1_17"
+	"wbtech/l1_18"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
@@ -86,5 +87,8 @@ func main() {
 		target := l1_17.BinarySearch(arr, 12)
 		fmt.Println(arr)
 		fmt.Println(target)
+	case 18:
+		incrementedCounter := l1_18.TestIncrementImplemetation()
+		fmt.Println(incrementedCounter)
 	}
 }
