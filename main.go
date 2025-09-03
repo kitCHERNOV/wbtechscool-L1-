@@ -11,6 +11,7 @@ import (
 	"wbtech/l1_12"
 	"wbtech/l1_13"
 	"wbtech/l1_16"
+	"wbtech/l1_17"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
@@ -79,5 +80,11 @@ func main() {
 		arr := []int{1, 2, 3, 12, 4, 6, 8, 10, 12, 14, 16, 18}
 		l1_16.QuickSort(arr)
 		fmt.Println(arr)
+	case 17:
+		arr := []int{1, 2, 3, 12, 4, 6, 8, 10, 12, 14, 16, 18}
+		l1_16.QuickSort(arr)
+		target := l1_17.BinarySearch(arr, 12)
+		fmt.Println(arr)
+		fmt.Println(target)
 	}
 }
