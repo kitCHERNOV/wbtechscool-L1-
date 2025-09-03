@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"fmt"
 	"math/rand"
 	"runtime"
@@ -117,7 +116,7 @@ func main() {
 	case 24:
 		l1_24.MainFunc()
 	case 25:
-		ctx, _ := context.WithCancel(context.Background())
-		l1_25.MainFuncTimer(ctx)
+		ch := l1_25.MainFuncTimer()
+		<-ch
 	}
 }
