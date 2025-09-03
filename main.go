@@ -17,6 +17,7 @@ import (
 	"wbtech/l1_2"
 	"wbtech/l1_20"
 	"wbtech/l1_21"
+	"wbtech/l1_22"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
 	"wbtech/l1_6"
@@ -105,5 +106,7 @@ func main() {
 		fmt.Println(newStr)
 	case 21:
 		l1_21.MainFunc()
+	case 22:
+		l1_22.MainFunc()
 	}
 }
