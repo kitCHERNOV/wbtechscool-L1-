@@ -13,6 +13,7 @@ import (
 	"wbtech/l1_16"
 	"wbtech/l1_17"
 	"wbtech/l1_18"
+	"wbtech/l1_19"
 	"wbtech/l1_2"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
@@ -90,5 +91,12 @@ func main() {
 	case 18:
 		incrementedCounter := l1_18.TestIncrementImplemetation()
 		fmt.Println(incrementedCounter)
+	case 19:
+		newRuStr := l1_19.ReverseStringReader("главрыба")
+		fmt.Println(newRuStr)
+		newEnStr := l1_19.ReverseStringReader("fisherhouse")
+		fmt.Println(newEnStr)
+		newEmojiStr := l1_19.ReverseStringReader("✅🧩🧵🔒👥⏱️📊⚛️🏁🕵️‍♂️🚀")
+		fmt.Println(newEmojiStr)
 	}
 }
