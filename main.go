@@ -15,6 +15,7 @@ import (
 	"wbtech/l1_18"
 	"wbtech/l1_19"
 	"wbtech/l1_2"
+	"wbtech/l1_20"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
 	"wbtech/l1_6"
@@ -98,5 +99,8 @@ func main() {
 		fmt.Println(newEnStr)
 		newEmojiStr := l1_19.ReverseStringReader("✅🧩🧵🔒👥⏱️📊⚛️🏁🕵️‍♂️🚀")
 		fmt.Println(newEmojiStr)
+	case 20:
+		newStr := l1_20.ReverseWordsOrder("snow dog sun")
+		fmt.Println(newStr)
 	}
 }
