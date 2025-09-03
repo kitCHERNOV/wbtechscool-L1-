@@ -21,6 +21,7 @@ import (
 	"wbtech/l1_23"
 	"wbtech/l1_24"
 	"wbtech/l1_25"
+	"wbtech/l1_26"
 	"wbtech/l1_3" // пакет l1_3 включает решение модуля l1.3 и l1.4
 	"wbtech/l1_5"
 	"wbtech/l1_6"
@@ -118,5 +119,7 @@ func main() {
 	case 25:
 		ch := l1_25.MainFuncTimer()
 		<-ch
+	case 26:
+		fmt.Println(l1_26.IsStringConsistUniqueLetters("abCdeA"))
 	}
 }
